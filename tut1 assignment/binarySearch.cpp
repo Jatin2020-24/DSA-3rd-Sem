@@ -33,7 +33,7 @@ int main()
     if (result == -1)
         cout << "Element not found\n";
     else
-        cout << "Element found at index " << result + 1 << endl;
+        cout << "Element found at index " << result << endl;
 
     return 0;
 }

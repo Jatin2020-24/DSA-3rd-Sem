@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
 
-bool linearSearch(int n, int arr[], int size)
+int linearSearch(int n, int arr[], int size)
 {
     bool check = false;
     for (int i = 0; i < size; i++)
     {
         if (arr[i] == n)
         {
-            check = true;
-            break;
+            return i;
         }
     }
-    return check;
+    return -1;
 }
 
 int main()
@@ -26,12 +25,13 @@ int main()
     {
         cin >> arr[i];
     }
-    
+
     cout << "\nEnter number to be searched: ";
     cin >> x;
-    if (linearSearch(x, arr, size))
-        cout << "Found";
+    int result = linearSearch(x, arr, size);
+    if (result == -1)
+        cout << "Not Found\n";
     else
-        cout << "Not Found";
+        cout << "Element is found at index: " << result;
     return 0;
 }
