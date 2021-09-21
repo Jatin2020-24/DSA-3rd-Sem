@@ -11,8 +11,6 @@ int main()
     {
         for (int j = 0; j < 2; j++)
         {
-            cout << "Enter a[" << i << "]"
-                 << "[" << j << "]: ";
             cin >> a[i][j];
             cout<<endl;
         }
@@ -24,6 +22,7 @@ int main()
             c[i][j] = a[j][i];
         }
     }
+    cout<<"Transpose of matrix\n\n";
     for (int i = 0; i < 2; i++)
     {
         for (int j = 0; j < 2; j++)

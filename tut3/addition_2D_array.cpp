@@ -11,21 +11,16 @@ int main()
     {
         for (int j = 0; j < 2; j++)
         {
-            cout << "Enter a[" << i << "]"
-                 << "[" << j << "]: ";
             cin >> a[i][j];
-            cout << endl;
         }
     }
-    cout << "Enter elements of 2nd matrix: " << endl;
+    
+    cout << "\nEnter elements of 2nd matrix: " << endl;
     for (int i = 0; i < 2; i++)
     {
         for (int j = 0; j < 2; j++)
         {
-            cout << "Enter b[" << i << "]"
-                 << "[" << j << "]: ";
             cin >> b[i][j];
-            cout << endl;
         }
     }
     for (int i = 0; i < 2; i++)
@@ -35,6 +30,7 @@ int main()
             c[i][j] = a[i][j] + b[i][j];
         }
     }
+    cout<<"Addition of matrix\n\n";
     for (int i = 0; i < 2; i++)
     {
         for (int j = 0; j < 2; j++)
