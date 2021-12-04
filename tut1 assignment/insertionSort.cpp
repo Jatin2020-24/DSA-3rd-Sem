@@ -18,14 +18,6 @@ void insertionSort(int arr[], int n)
 	}
 }
 
-void printArr(int arr[], int n)
-{
-	int i;
-	for (i = 0; i < n; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}
-
 int main()
 {
     int n;
@@ -38,7 +30,9 @@ int main()
         cin>>arr[i];
     }
 	insertionSort(arr, n);
-	printArr(arr, n);
+	for(int i=0;i<n;i++){
+		cout<<arr[i]<<" ";
+	}
 
 	return 0;
 }

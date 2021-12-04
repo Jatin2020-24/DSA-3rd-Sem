@@ -1,5 +1,3 @@
-// Addition of 2D array
-
 #include <iostream>
 using namespace std;
 

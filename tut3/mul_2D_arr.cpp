@@ -1,5 +1,3 @@
-// Multiplication of 2D array
-
 #include <iostream>
 using namespace std;
 
@@ -12,18 +10,18 @@ int main()
         for (int j = 0; j < 2; j++)
         {
             cin >> a[i][j];
-            cout<<endl;
         }
     }
+     cout << endl;
     cout << "Enter elements of 2nd matrix: " << endl;
     for (int i = 0; i < 2; i++)
     {
         for (int j = 0; j < 2; j++)
         {
             cin >> b[i][j];
-            cout<<endl;
         }
     }
+     cout << endl;
     cout<<"Multiplication of matrix\n\n";
      for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {

@@ -1,5 +1,3 @@
-// Transpose of matrix
-
 #include <iostream>
 using namespace std;
 
@@ -12,7 +10,6 @@ int main()
         for (int j = 0; j < 2; j++)
         {
             cin >> a[i][j];
-            cout<<endl;
         }
     }
     for (int i = 0; i < 2; i++)
@@ -22,7 +19,7 @@ int main()
             c[i][j] = a[j][i];
         }
     }
-    cout<<"Transpose of matrix\n\n";
+    cout<<"\nTranspose of matrix\n";
     for (int i = 0; i < 2; i++)
     {
         for (int j = 0; j < 2; j++)
